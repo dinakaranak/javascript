@@ -210,12 +210,11 @@ for (let i = 2; i < 10; i++) {
 // nested loops:
 
 
-// for(let i=0; i<=3;i++){
-//     for(let j=0;j<3;j++){
-//         console.log(i,j);
-        
-//     }
-// }
+for(let i=0; i<=3;i++){
+    for(let j=0;j<3;j++){
+        console.log(i,j);
+    }
+}
 
 
 // list of prime nos

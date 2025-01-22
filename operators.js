@@ -5,7 +5,7 @@ let a =10
 // increment: post inc
 console.log(a++);  //a+1
 
-// console.log(a);
+console.log(a);
 
 // pre inc
 console.log(++a);  // a=a+1

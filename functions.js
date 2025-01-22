@@ -71,7 +71,24 @@ function factorial(n){
 console.log(factorial(5));
 
 
-// call back functions: a fn passed as aparameter to ano
+// call back functions: a fn passed as a parameter to another fn.
+
+
+function sampleSum(n){
+    console.log("sample call back fn", n);
+    
+}
+
+function anotherfn(x){
+    x("hello")
+    console.log("end of fn");
+    
+    
+}
+
+anotherfn(sampleSum)  // call back fn
+
+// recursion: a fn called inside the same fn that is known as recursion
 
 
 

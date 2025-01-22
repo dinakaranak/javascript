@@ -94,28 +94,17 @@ let ref=asc.charCodeAt(0);
  }
 console.log(res);
 
-//8) Create a function to check if a given number is a strong number.
-
-let factorial=1;
-let numbers='';
-for(let i=1; i<=numbers;i++){
-    factorial*=i;
-}
-let given=145
-let tempart =given;
-let sumFactorial=0;
-while(tempart>0){
-    let total=tempart%10;
-    sumFactorial += total; 
-    tempart = Math.floor(tempart / 10);
-}
-if(sumFactorial===given){
-    console.log(given,"is a strong number");
-}
-else{
-    console.log(given,"is not a strong number");
+function value(valu){
+        let valu=3
+        let resu=1;
+        for(let i=0; i<powe; i++){
+            resu=resu*valu
+        }
+        return resu;
     
 }
+value(5)
+//8) Create a function to check if a given number is a strong number.
 
 
 // using function
@@ -146,9 +135,7 @@ if (strongNumber(155)) {
     console.log(number,`is not a strong number.`);
 }
 
-
-
-//Implement a function to count the number of vowels in a given string.
+//9) Implement a function to count the number of vowels in a given string.
 
 const vowe=['a','e','i','o','u'];
 let cou=0;
@@ -180,10 +167,10 @@ function countVowels(str) {
 console.log(countVowels("information technology"));
 
 
-//Create a function to check if a given number is a perfect square.
+//10) Create a function to check if a given number is a perfect square.
 
   let sqr =0;
-  let numbe=39;
+  let numbe=49;
   while(sqr*sqr <numbe){
     
     sqr++;

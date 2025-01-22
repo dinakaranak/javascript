@@ -1,17 +1,18 @@
-// // loops:
-// // 1.while loop (definite loop)
+// // loops: // loops are used to execute a set of instructions repeatedly until a particular condition is met.
+//(or) loop can execute ba block of code a number of times.
+// // 1.while loop (definite loop)// loops through  a block of code as long as a specified condition is true
 // // syntax: while(condn){//coding; inc or dec;}
-// let i=false
-// let j=1
-// while( ! i){
+let i=false
+let j=1
+while( ! i){
 
-//     if(j==5){
-//         i=true
-//     }
-// console.log("hello",i,j);
+    if(j==5){
+        i=true
+    }
+console.log("hello",i,j);
 
-//  j++
-// }
+ j++
+}
 
 
 // // print the n natural nos in reverse
@@ -69,7 +70,8 @@
 
 
 
-// // do while: definite loop
+// // do while: definite loop //is the variant of while loop. this loop will execute the code block once before checking 
+// if the condn is true then it will repeat the loop as long as the condn is true
 // // do{//codings}while(condn)
 
 // // let num =10
@@ -105,7 +107,7 @@
        
 
    
-// // for loop: indefinite loop
+// // for loop: indefinite loop // for loop repeats until a specified condition evaluates to false.
 // // syn: for(initialization;condn;in or dec){
 // // codings }
 
@@ -224,3 +226,21 @@ for(let i=0; i<=3;i++){
 
 
 
+// loops: loops are used to execute a set of instructions repeatedly until a particular condition is met.
+// while loop: while loop can execute a block of code as long as the specified condition is true.
+//do while loop: is a variant of the while loop. this loop it will execute the code block once.before checking if the
+//condition is true then it will repeat the loop of condition is true
+//for loop: a for loop repeats until a specified condition is evaluates to false.
+
+// loop controls : break and continue
+
+for(let i=0;i<5;i++){
+    if(i==3){
+        // break
+    continue
+    }
+
+
+    console.log(i);
+    
+}

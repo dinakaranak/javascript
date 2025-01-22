@@ -1,6 +1,11 @@
-// switch : 
+// switch :  // switch statement to select one of many code blocks to be executed.
+//the switch statement evaluates an expression. The value of the expression is 
+// then compared with the values of each case block.
+//  If there is a match, the understanding  block of code is executed.
+// no match is found the default case is executed.
+
 // syn: switch(var){ 
-// case 1: // codings; break;
+// case 1: // codings; break;//the break  out of the switch block of code
 // case 2: // codings ; break;
 // default : // codings; break;}
 

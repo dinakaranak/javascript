@@ -1,5 +1,5 @@
 // conditional statements: 
-// simple if:
+// simple if://it allow the program to check the condition
 // syntax: if(condn){// block of codes}
 
 if(104>12){
@@ -8,7 +8,8 @@ if(104>12){
 }
 
 
-// if else:
+// if else: //it allow the program to check the condn. if the condn is true the code inside the if block code is executed
+//otherwise if the condition is false, the code inside the else block of code is executed.
 // if(condn){// codings}
 // else{//codings}
 
@@ -96,7 +97,9 @@ else{
 }
 
 
-// if else if:
+// if else if: it allows the program to check multiple condition sequentially, if the condition is true, the code inside 
+// the if block code is executed and if the condition is false, then else if check the next condition, the process continues
+//until a true condition is found. all the none of condn is true,the else block is executed  
 // syn : if(condn){// codings}
 // else if(condn){ // codings}
 // else {// codings}

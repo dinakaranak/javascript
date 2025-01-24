@@ -13,8 +13,16 @@ console.log(rev);
 
 
 //using function
+ function reverseString(fst){
+    let reverse=""
+    for(let  i=fst.length-1; i>=0; i--){
+        reverse +=fst[i];
+    }
+    console.log(reverse);
+ }
 
-// function
+ 
+reverseString("dina")
 
 //2) Create a function to calculate the sum of digits of the factorial of a number.
 
@@ -94,16 +102,16 @@ let ref=asc.charCodeAt(0);
  }
 console.log(res);
 
-function value(valu){
-        let valu=3
-        let resu=1;
-        for(let i=0; i<powe; i++){
-            resu=resu*valu
-        }
-        return resu;
+// function value(valu){
+//         let valu=3
+//         let resu=1;
+//         for(let i=0; i<powe; i++){
+//             resu=resu*valu
+//         }
+//         return resu;
     
-}
-value(5)
+// }
+// value(5)
 //8) Create a function to check if a given number is a strong number.
 
 

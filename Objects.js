@@ -11,7 +11,7 @@ let user = {
         dno:5,
         street:"first street",
         area:"cbe",
-        pin:678432
+        pin:678432    
     },
 
     login:function(){  // method  : a function defined for a object.

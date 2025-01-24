@@ -244,3 +244,20 @@ for(let i=0;i<5;i++){
     console.log(i);
     
 }
+
+
+// for -in loop
+
+let arr = [67,90,34]
+
+for(let i in arr){
+    console.log(arr[i],i);
+    
+}
+
+// for - of loop;
+
+for(let i of arr){
+    console.log(i);
+    
+}

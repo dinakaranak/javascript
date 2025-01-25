@@ -83,12 +83,12 @@ arrayFilter()
 
 
 
-function countEach(){
-    let word=["this is a container"];
-    for (let i of word){
-       console.log(i);
+// function countEach(){
+//     let word=["this is a container"];
+//     for (let i of word){
+//        console.log(i);
        
-    }
+//     }
 
-}
-countEach()
+// }
+// countEach()

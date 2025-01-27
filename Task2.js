@@ -15,7 +15,7 @@ let words = stringLetter.split(" ");
     console.log(largestWord);
 
 
-//find out the second largest number
+//find out the second largest word
 
 
 let str = "This is like a Container but Storing the value " ;

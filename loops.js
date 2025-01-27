@@ -1,5 +1,5 @@
 // // loops: // loops are used to execute a set of instructions repeatedly until a particular condition is met.
-//(or) loop can execute ba block of code a number of times.
+//(or) loop can execute a block of code a number of times.
 // // 1.while loop (definite loop)// loops through  a block of code as long as a specified condition is true
 // // syntax: while(condn){//coding; inc or dec;}
 let i=false
@@ -20,49 +20,49 @@ console.log("hello",i,j);
 // // factorial
 // // factors of given no
 
-// //n natural nos in reverse
-// // let n=20
-// // while(n<=20 && n>0){
+// n natural nos in reverse
+let number=20
+while(number<=20 && number>0){
     
-// //     console.log(n);
-// //     n--
+    console.log(number);
+    number--
     
-// // }
+}
 
 //print list of odd nos with in a limit
 
-// let k=4
-// while( k<50){
-//     if(k%2 !==0){
-//         console.log(k);     
-//     }
+let k=4
+while( k<50){
+    if(k%2 !==0){
+        console.log(k);     
+    }
    
-// k++
-// }
+k++
+}
 
 // //factorial
 
-// let m=1
-// let d=5
-// while(d>0){
-//    m*=d
-//    d--
-// }
-// console.log(m)
+let m=1
+let d=5
+while(d>0){
+   m*=d
+   d--
+}
+console.log(m)
 
 
 
 //     // factors
 
 
-// let f=1
-// let fact=12
-// while(f<=fact){
-//     if(fact%f==0){
-//         console.log(f);   
-//     }  
-//     f++
-// }
+let f=1
+let fact=12
+while(f<=fact){
+    if(fact%f==0){
+        console.log(f);   
+    }  
+    f++
+}
 
 
 

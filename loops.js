@@ -112,31 +112,31 @@ while(f<=fact){
 // // codings }
 
 
-// // for(let i=0;i<5;i++){
-// //     console.log(i);
+for(let i=0;i<5;i++){
+    console.log(i);
     
-// // }
+}
 
 // //n natural number is reverse
 
-// for(let reverse=20; reverse>0; reverse--){
-//     console.log(reverse);
-// }
+for(let reverse=20; reverse>0; reverse--){
+    console.log(reverse);
+}
 
-// //print list of odd nos with in a limit
+//print list of odd nos with in a limit
 
-// for(let li=5; li<50; li++){
-//     if(li%2 !==0){
-//     console.log(li);}
+for(let li=5; li<50; li++){
+    if(li%2 !==0){
+    console.log(li);}
     
-// }
+}
 
-// //factorial
-// let fac=1
-// for(let factor=5; factor>0; factor--){
-//         fac*=factor;
-// }
-// console.log(fac);
+//factorial
+let fac=1
+for(let factor=5; factor>0; factor--){
+        fac*=factor;
+}
+console.log(fac);
 
 
 //factors

@@ -65,7 +65,7 @@ console.log(age.test(age_no));
 //password
 
 let pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-let password="inaF212004@"
+let password="DinaF212004@"
 console.log(pass.test(password));
 
 

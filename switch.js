@@ -116,7 +116,7 @@ switch(total){
 let height = 1.80
 let weight = 45
 calculate = weight/(height*height);
-console.log(calculate);
+// console.log(calculate);
 if(calculate<=18.5){
     console.log("underweighted");
 }

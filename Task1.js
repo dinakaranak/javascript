@@ -28,8 +28,8 @@ reverseString("dina")
 
 
 let result = 1;
-let n = 4;
-for (let i = 2; i <= n; i++) {
+let n = 5;
+for (let i = 1; i <= n; i++) {
     result *= i;
 }
 console.log(result);
@@ -122,12 +122,12 @@ function strongNumber(number) {
 
     while (temp > 0) {
         let digit = temp % 10; 
-        sumOfFactorials += factorial(digit); 
+        sumOfFactorials += fact; 
         temp = Math.floor(temp / 10); 
     }
     return sumOfFactorials === number;
 }
-let number = 155;
+let number = 145;
 if (strongNumber(155)) {
     console.log(number,`is a strong number.`);
 } else {

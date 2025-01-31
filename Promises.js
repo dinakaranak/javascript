@@ -6,7 +6,7 @@ let myPromise = new Promise((resolve,reject) =>{
     if(success){
         setTimeout(()=>{
             resolve("success")
-        },2000)
+        },5000)
         
     }
     else{

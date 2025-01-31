@@ -4,7 +4,7 @@ console.log('welcome');
 setTimeout(()=>{
     console.log("bye");
     
-},2000)
+},5000)
 
 console.log("processing");
 // syntax:

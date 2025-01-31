@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(189, 241, 243);
+}
+.tit{
+ 
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+}
+.grid-container {
+    margin-top: 10px;
+    margin-left: 39%;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  
+    
+}
+
+.grid-item {
+    font-size: 40px;
+    color: #fcf7f7;
+    background-color: rgb(89, 91, 92);
+    text-align: center;
+    border: 1px solid #fcf7f7;
+    padding: 20px;
+}
+.ress{
+    height: 40px;
+    width: 100px;
+    background-color: bisque;
+    border-radius: 10px;
+   
+}
+
+.text{
+    color: green;
+    text-align: center;
+  
+  font-size: 40px;
+}
+.btn{
+    text-align:center;
+}

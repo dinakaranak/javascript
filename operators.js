@@ -32,8 +32,8 @@ console.log(12!=11);
 
 // ===, !==
 
-console.log(12=="12"); // type coercion happened here
-console.log(12==='12'); // strict validation; it doest not perform type coercion
+console.log(12=="12"); // type coercion happened here //check for value equality 
+console.log(12==='12'); // strict validation; it doest not perform type coercion // it check for both value and type equality
 
 //logical operator: AND,OR,NOT
 // AND (&&): if all of the condn gets true , it will return true

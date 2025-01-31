@@ -160,18 +160,15 @@ for(let table=1; table<=10; table++){
 }
 
 //prime or non prime number
-let num=14;
+let num=13;
 let nu,flag=0;
 let isPrime = true
 {
-
     for (let i = 2; i < num; i++) {
         if (num % i === 0) {
-          isPrime=false
-             
+          isPrime=false          
         }
     }
-
     if(isPrime){
 
    console.log("prime");

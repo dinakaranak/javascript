@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <input type="text" id="data">
+    <button onclick="sample()">click</button>
+    <h2 id="result"></h2>
+    <input type="text" id="prime">
+    <button onclick="primeNum()">click</button>
+    <h3 id="output"></h3>
+    <input type="text" id="odd">
+    <button onclick="OddEven()">click</button>
+    <h3 id="print"></h3>
+    <input type="text" id="leap">
+    <button onclick="leapYear()">Click</button>
+    <p id="out"></p>
+    <input type="text" placeholder="height" id="height">
+    <input type="text" placeholder="weight" id="weight">
+    <button onclick="bmiCalc()">click</button>
+    <h1 id="calculate"></h1>
+
+
+
+
+    <script>
+        console.log("welcome")
+        function sample() {
+            let a = document.getElementById("data").value
+            console.log(a);
+            let fact = 1
+            for (let i = 1; i <= a; i++) {
+                fact *= i
+            }
+
+            console.log(fact);
+            document.getElementById("result").innerHTML = `The factorial value of ${a} is ${fact}`
+        }
+
+        // prime or not
+        // odd or even
+        // leap year or not
+
+        //prime or not 
+        function primeNum() {
+            let num = document.getElementById("prime").value
+            let isPrime = true
+            let no, flag = 0
+            for (let i = 2; i < num; i++) {
+                if (num % i === 0) {
+                    isPrime = false
+                }
+            }
+            if (isPrime) {
+                document.getElementById("output").innerHTML = `${num} is a prime number`
+            }
+            else {
+                document.getElementById("output").innerHTML = `${num} is not a prime number`
+            }
+
+        }
+
+        // odd or even
+
+        function OddEven() {
+            let number = document.getElementById("odd").value
+            if (number % 2 == 0) {
+                document.getElementById("print").innerHTML = `${number} is even number`
+            }
+            else {
+                document.getElementById("print").innerHTML = `${number} is odd number`
+            }
+        }
+
+        //leap year or not
+        function leapYear() {
+            let year = document.getElementById("leap").value
+            if (year % 4 == 0 && year % 100 !== 0 || year % 400 == 0) {
+                document.getElementById("out").innerHTML = `${year} is leap year`
+            }
+            else {
+                document.getElementById("out").innerHTML = `${year} is not a leap year`
+            }
+        }
+
+        // bmi calculator
+
+        function bmiCalc() {
+            let height = document.getElementById("height").value
+            let weight = document.getElementById("weight").value
+            calculate = weight / (height * height);
+            // console.log(calculate);
+            if (calculate <= 18.5) {
+                document.getElementById("calculate").innerHTML = `${calculate} is a underweighted`
+            }
+            else if (calculate <= 25 && calculate > 18.5) {
+                document.getElementById("calculate").innerHTML = `${calculate} is a normal`
+            }
+            else if (calculate > 25 && calculate <= 30) {
+                document.getElementById("calculate").innerHTML = `${calculate} is a overweighted`
+            }
+            else {
+                document.getElementById("calculate").innerHTML = `${calculate} is a obesity`
+            }
+        }
+    </script>
+</body>
+
+</html>

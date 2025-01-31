@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="tit">XO GAME</h1>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" id="cell 0" onclick="sosGame(0)"></div>
+        <div class="grid-item" id="cell 1" onclick="sosGame(1)"></div>
+        <div class="grid-item" id="cell 2" onclick="sosGame(2)"></div>
+        <div class="grid-item" id="cell 3" onclick="sosGame(3)"></div>
+        <div class="grid-item" id="cell 4" onclick="sosGame(4)"></div>
+        <div class="grid-item" id="cell 5" onclick="sosGame(5)"></div>
+        <div class="grid-item" id="cell 6" onclick="sosGame(6)"></div>
+        <div class="grid-item" id="cell 7" onclick="sosGame(7)"></div>
+        <div class="grid-item" id="cell 8" onclick="sosGame(8)"></div></div>
+      <h1 id="result" class="text"></h1><br><div class="btn">
+     <button class="ress" onclick="reset()">reset</button></div>
+    
+    <script>
+
+        let currentPlayer = "x"
+        let store = Array(9).fill(null)
+        let winCombination = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]]
+        console.log(store);
+        function sosGame(index) {
+            if (store[index] == null) {
+                store[index] = currentPlayer
+                document.getElementById(`cell ${index}`).innerHTML = currentPlayer
+                if (checkwinner()) {
+                    return
+                }
+                else {
+                    currentPlayer = currentPlayer == "x" ? "o" : "x"
+                    document.getElementById("result").innerHTML = `${currentPlayer}'s turn`
+                }
+            }
+            else {
+                return
+            }
+        }
+        function checkwinner() {
+            for (let i of winCombination) {
+                console.log(i);
+                let [a, b, c] = i
+                console.log(a, b, c);
+                console.log(store[a]);
+                if (store[a] && store[a] == store[b] && store[a] == store[c]) {
+                    document.getElementById("result").innerHTML = `${currentPlayer} is winner`
+                    return true
+                }
+            }
+        }
+
+        function reset() {
+            store = Array(9).fill(null);
+            for (let i = 0; i < 9; i++) {
+                document.getElementById(`cell ${i}`).innerHTML = ""
+            }
+            currentPlayer = "x";
+            document.getElementById("result").innerHTML = `${currentPlayer}'s turn`;
+        }
+    </script>
+</body>
+
+</html>

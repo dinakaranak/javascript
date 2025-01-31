@@ -8,7 +8,7 @@ console.log(5+6+4);
 
 let a=67
 let b=6                                                 
-console.log(c);
+
 // keywords to declare a variable: let, const, var
 
 var s=23
@@ -63,6 +63,17 @@ let obj = {
 
 
 
+
+let nam = "Dinakaran"
+
+// Check if the user entered a name
+if (nam) {
+    console.log(`Hello, ${nam}! Welcome to JavaScript.`);
+   //  alert(`Hello, ${nam}! Welcome to JavaScript.`);
+} else {
+    console.log("Hello, Guest! Welcome to JavaScript.");
+   //  alert("Hello, Guest! Welcome to JavaScript.");
+}
 
  
 
